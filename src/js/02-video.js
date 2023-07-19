@@ -33,7 +33,7 @@ player.setCurrentTime(nouTime).then(function(seconds) {
             break;
     }
 });
-
+console.log('ура')
     
 
 
