@@ -18,7 +18,7 @@ const onPlay = function (data) {
 localStorage.setItem(value, time) 
 };
 
-    player.on('timeupdate', onPlay);
+    player.on('timeupdate', throttle(onPlay, 1000));
 
 const nouTime = localStorage.getItem(value)
 
